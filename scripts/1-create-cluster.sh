@@ -1,7 +1,7 @@
 source ./scripts/.env
 
 # Uses option env var
-# export K3S_VERSION_TAG_OVERRIDE='v1.24.17-k3s1'
+# K3S_VERSION_TAG
 #
 # See below for available versions
 # https://hub.docker.com/r/rancher/k3s/tags
@@ -12,7 +12,6 @@ source ./scripts/delete-cluster.sh
 
 echo "Creating a new cluster"
 
-K3S_VERSION_TAG=${K3S_VERSION_TAG_OVERRIDE:-'v1.24.17-k3s1'}
 
 echo "Using K3s version: ${K3S_VERSION_TAG}"
 
