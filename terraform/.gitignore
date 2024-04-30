@@ -1,0 +1,9 @@
+.terraform
+terraform.tfstate
+*.tfstate*
+terraform.tfvars
+*.backup
+.idea
+
+modules/helm/charts/** 
+scripts/fetched-charts.txt
